@@ -16,6 +16,7 @@ public class WebDriverManager {
 	public static WebDriver startDriver(String type) {
 		WebDriver d;
 		if(type.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver", "c:/Selenium/ChromeDriver/chromedriver.exe");
 			d = new ChromeDriver();
 			map.put(Thread.currentThread().getId(), d);
 		} else if(type.equalsIgnoreCase("firefox")) {
