@@ -16,4 +16,11 @@
     </classes>
   </test>
 
+  <test name="Council Tax Band Tests - IE">
+    <parameter name="browser_type" value="ie"/>
+    <classes>
+      <class name="com.clearqa.test.CTaxBandTest"/>
+    </classes>
+  </test>
+
 </suite>
