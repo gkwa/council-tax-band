@@ -2,6 +2,7 @@ package com.clearqa.test;
 
 import java.util.HashMap;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.SafariDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -20,6 +21,9 @@ public class WebDriverManager {
 			map.put(Thread.currentThread().getId(), d);
 		} else if(type.equalsIgnoreCase("firefox")) {
 			d = new FirefoxDriver();
+			map.put(Thread.currentThread().getId(), d);
+		} else if(type.equalsIgnoreCase("safari")) {
+			d = new SafariDriver();
 			map.put(Thread.currentThread().getId(), d);
 		} else {
 			throw new IllegalArgumentException("Browser type not supported: " + type);
