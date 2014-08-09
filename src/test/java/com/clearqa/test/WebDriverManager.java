@@ -2,7 +2,7 @@ package com.clearqa.test;
 
 import java.util.HashMap;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.SafariDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
